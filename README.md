@@ -93,7 +93,7 @@ Jump, dodge, and collect magical stars as you guide Ember through vibrant pixel 
 
 ```bash
 # Clone the repo
-git clone https://github.com/your-username/ember-quest.git
+git clone https://github.com/omnitechphilippines/ember-quest.git
 cd ember-quest
 
 # Get packages
