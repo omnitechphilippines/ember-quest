@@ -5,13 +5,13 @@ import '../ember_quest.dart';
 import 'heart.dart';
 
 class Hud extends PositionComponent with HasGameReference<EmberQuestGame> {
-  late TextComponent _scoreTextComponent;
+  late TextComponent<TextPaint> _scoreTextComponent;
 
   Hud({super.position, super.size, super.scale, super.angle, super.anchor, super.children, super.priority = 5});
 
   @override
   Future<void> onLoad() async {
-    _scoreTextComponent = TextComponent(
+    _scoreTextComponent = TextComponent<TextPaint>(
       text: '${game.starsCollected}',
       textRenderer: TextPaint(style: const TextStyle(fontSize: 32, color: Color.fromRGBO(10, 10, 10, 1))),
       anchor: Anchor.center,
